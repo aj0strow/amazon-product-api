@@ -46,7 +46,7 @@ module AmazonProductAPI
     
     def add_signature(options)
       options[:Signature] = signature(options)
-      sort_hash!(options)
+      sort_hash! options   # see helpers.rb
     end
     
     # amazon signature docs
@@ -59,7 +59,7 @@ module AmazonProductAPI
     end
     
     def signature_data(options)
-      sort_hash! options
+      sort_hash! options   # see helpers.rb
       query = HTTParty::HashConversions.to_params(options)
       ['GET', domain, '/onca/xml', query].join("\n")
     end
