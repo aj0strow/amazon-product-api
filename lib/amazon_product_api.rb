@@ -1,6 +1,6 @@
-require 'amazon_product_api/helpers'
-require 'amazon_product_api/options'
-require 'amazon_product_api/base'
+%w(helpers default_options base).each do |mod| 
+  require "amazon_product_api/#{mod}"
+end
 
 module AmazonProductAPI
   
@@ -18,8 +18,8 @@ module AmazonProductAPI
   
   extend Helpers
   extend Base
-  extend Options
+  extend DefaultOptions
   
   reset_default_options
-  
+
 end

@@ -10,8 +10,5 @@ module AmazonProductAPI
       hash
     end
     
-  end
-  
-  extend Helpers
-  
+  end  
 end

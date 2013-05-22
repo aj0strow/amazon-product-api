@@ -1,5 +1,5 @@
 module AmazonProductAPI
-  module Options
+  module DefaultOptions
     
     # params
     #  locale: :ca
@@ -18,6 +18,10 @@ module AmazonProductAPI
     
     def defaults
       @default_options
+    end
+    
+    def add_defaults(options)
+      defaults.each{ |k, v| options[k] ||= v }
     end
     
     def reset_default_options
