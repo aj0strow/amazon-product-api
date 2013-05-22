@@ -1,4 +1,5 @@
 require 'openssl'
+require 'httparty'
 
 module AmazonProductAPI
   module Base

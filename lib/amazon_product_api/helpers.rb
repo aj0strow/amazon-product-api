@@ -1,5 +1,3 @@
-require 'httparty'
-
 module AmazonProductAPI
   module Helpers
     
