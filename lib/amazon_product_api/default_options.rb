@@ -30,6 +30,7 @@ module AmazonProductAPI
         Version: '2011-08-01'
       }
       @locale = :us
+      @aws_secret_key = nil
     end
     
   end
