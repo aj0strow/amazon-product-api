@@ -2,6 +2,8 @@
 
 This gem is a wrapper for the amazon product api so you don't have to figure out how to sign requets. 
 
+![](http://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-ash4/1001782_10151715655417269_1172962511_n.jpg)
+
 ### Set Default Values
 
 ```ruby
@@ -60,4 +62,3 @@ Add the following line to your `Gemfile`
 ```
 gem 'amazon_product_api', github: 'aj0strow/amazon_product_api'
 ```
-
