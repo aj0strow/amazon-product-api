@@ -40,8 +40,7 @@ module AmazonProductAPI
     end    
     
     def timestamp
-      date, time = Time.now.utc.to_s.split(' ')
-      "#{date}T#{time}Z"
+      Time.now.utc.iso8601
     end
     
     def add_signature(options)
