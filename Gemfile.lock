@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     amazon_product_api (0.0.2)
+      httparty
 
 GEM
   remote: https://rubygems.org/
@@ -18,5 +19,5 @@ PLATFORMS
 
 DEPENDENCIES
   amazon_product_api!
-  httparty
+  bundler
   rake
